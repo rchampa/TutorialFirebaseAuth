@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "326895014608",
+    "firebase_url": "https://tutorialfbauth.firebaseio.com",
+    "project_id": "tutorialfbauth",
+    "storage_bucket": "tutorialfbauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326895014608:android:275c71abce08eefa",
+        "android_client_info": {
+          "package_name": "ric.es.tutorialauthfb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326895014608-a5pg7dp433abv4ofq5db11jvi7s1oo1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ric.es.tutorialauthfb",
+            "certificate_hash": "F5258A80B0D3DC53DF695B2F0E9753F30F938936"
+          }
+        },
+        {
+          "client_id": "326895014608-rojq4nn93c7q71u3nr1nphba35kjpl51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFGAZaw7dYDDMSCR-8aBUNpzcYKO6FA_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326895014608-c6j0rhhnoikh94pjm91la1rht64e1hnf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ric.es.tutorialauthfb"
+              }
+            },
+            {
+              "client_id": "326895014608-rojq4nn93c7q71u3nr1nphba35kjpl51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
