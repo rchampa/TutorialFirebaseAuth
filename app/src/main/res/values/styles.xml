@@ -21,8 +21,8 @@
 
         <item name="android:textColor">@color/white</item>>
 
-        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
-        <item name="android:colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:colorButtonNormal">@color/colorAccent</item>
     </style>
 
 
