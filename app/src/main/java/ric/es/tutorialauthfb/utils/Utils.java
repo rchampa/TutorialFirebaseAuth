@@ -1,4 +1,4 @@
-package ric.es.tutorialauthfb;
+package ric.es.tutorialauthfb.utils;
 
 import android.content.Context;
 import android.view.View;

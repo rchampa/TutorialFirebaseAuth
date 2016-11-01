@@ -71,6 +71,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                         }
                     });
         }
+        else{
+            FirebaseAuth.getInstance().signOut();
+            finish();
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+        }
     }
 
     @Override

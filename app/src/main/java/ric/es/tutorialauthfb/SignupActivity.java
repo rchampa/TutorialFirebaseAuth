@@ -28,18 +28,6 @@ public class SignupActivity extends AppCompatActivity {
     @BindView(R.id.input_reEnterPassword) EditText _reEnterPasswordText;
     @BindView(R.id.btn_signup) Button _signupButton;
 
-//    @BindView(R.id.input_name)
-//    EditText _nameText;
-//    @BindView(R.id.input_address)
-//    EditText _addressText;
-//
-//    @BindView(R.id.input_mobile)
-//    EditText _mobileText;
-//
-
-//    @BindView(R.id.link_login)
-//    TextView _loginLink;
-
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -74,11 +62,6 @@ public class SignupActivity extends AppCompatActivity {
 
         String email = _emailText.getText().toString();
         String password = _passwordText.getText().toString();
-        String reEnterPassword = _reEnterPasswordText.getText().toString();
-
-//        String name = _nameText.getText().toString();
-//        String address = _addressText.getText().toString();
-//        String mobile = _mobileText.getText().toString();
 
 
         // TODO: Implement your own signup logic here.
@@ -94,6 +77,7 @@ public class SignupActivity extends AppCompatActivity {
                         // signed in user can be handled in the listener.
                         if (task.isSuccessful()) {
                             //Se puede iniciar sesion directamente
+                            mAuth.getCurrentUser().sendEmailVerification();
                         }
                         else{
                             Toast.makeText(SignupActivity.this, task.getException().getMessage(),Toast.LENGTH_SHORT).show();
@@ -135,26 +119,6 @@ public class SignupActivity extends AppCompatActivity {
         String password = _passwordText.getText().toString();
         String reEnterPassword = _reEnterPasswordText.getText().toString();
 
-//        String name = _nameText.getText().toString();
-//        String address = _addressText.getText().toString();
-//        String mobile = _mobileText.getText().toString();
-
-
-//        if (name.isEmpty() || name.length() < 3) {
-//            _nameText.setError("at least 3 characters");
-//            valid = false;
-//        } else {
-//            _nameText.setError(null);
-//        }
-
-//        if (address.isEmpty()) {
-//            _addressText.setError("Enter Valid Address");
-//            valid = false;
-//        } else {
-//            _addressText.setError(null);
-//        }
-
-
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             _emailText.setError("enter a valid email address");
             valid = false;
@@ -162,12 +126,6 @@ public class SignupActivity extends AppCompatActivity {
             _emailText.setError(null);
         }
 
-//        if (mobile.isEmpty() || mobile.length()!=10) {
-//            _mobileText.setError("Enter Valid Mobile Number");
-//            valid = false;
-//        } else {
-//            _mobileText.setError(null);
-//        }
 
         if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
             _passwordText.setError("between 4 and 10 alphanumeric characters");
